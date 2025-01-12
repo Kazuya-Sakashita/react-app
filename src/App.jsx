@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { ColoredMessage } from "./components/ColoredMessage";
+// import { useEffect, useState } from "react";
+// import { ColoredMessage } from "./components/ColoredMessage";
 import { CssModules } from "./components/CssModules";
+import { StyledJsx } from "./components/StyledJsx";
 
 export const App = () => {
   // // useStateの定義
@@ -30,6 +31,7 @@ export const App = () => {
       <button onClick={onClickButton}>ボタン</button>
       <p>{num}</p> */}
       <CssModules />
+      <StyledJsx />
     </>
   );
 };
