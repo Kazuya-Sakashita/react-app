@@ -1,23 +1,24 @@
 import { useEffect, useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
+import { CssModules } from "./components/CssModules";
 
 export const App = () => {
-  // useStateの定義
-  const [num, setNum] = useState(0);
+  // // useStateの定義
+  // const [num, setNum] = useState(0);
 
-  //useEffectの定義
-  useEffect(() => {
-    alert("useEffectが実行されました");
-  }, [num]);
+  // //useEffectの定義
+  // useEffect(() => {
+  //   alert("useEffectが実行されました");
+  // }, [num]);
 
-  // ボタンを押した時に実行する関数を定義
-  const onClickButton = () => {
-    setNum(num + 1);
-  };
+  // // ボタンを押した時に実行する関数を定義
+  // const onClickButton = () => {
+  //   setNum(num + 1);
+  // };
 
   return (
     <>
-      <h1 style={{ color: "red" }}>こんにちは！</h1>
+      {/* <h1 style={{ color: "red" }}>こんにちは！</h1>
       <ColoredMessage />
       <ColoredMessage color="blue" fontSize="24px" message="お元気ですか？" />
       <ColoredMessage color="blue" fontSize="24px">
@@ -27,7 +28,8 @@ export const App = () => {
         元気ですよ！
       </ColoredMessage>
       <button onClick={onClickButton}>ボタン</button>
-      <p>{num}</p>
+      <p>{num}</p> */}
+      <CssModules />
     </>
   );
 };
