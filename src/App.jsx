@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 
 export const App = () => {
   // useStateの定義
   const [num, setNum] = useState(0);
+
+  //useEffectの定義
+  useEffect(() => {
+    alert("useEffectが実行されました");
+  }, [num]);
 
   // ボタンを押した時に実行する関数を定義
   const onClickButton = () => {
