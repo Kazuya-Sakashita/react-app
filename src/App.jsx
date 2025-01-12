@@ -1,6 +1,7 @@
 // import { useEffect, useState } from "react";
 // import { ColoredMessage } from "./components/ColoredMessage";
 import { CssModules } from "./components/CssModules";
+import { Emotion } from "./components/Emorion";
 import { StyledComponents } from "./components/StyledComponents";
 import { StyledJsx } from "./components/StyledJsx";
 
@@ -34,6 +35,7 @@ export const App = () => {
       <CssModules />
       <StyledJsx />
       <StyledComponents />
+      <Emotion />
     </>
   );
 };
