@@ -1,9 +1,10 @@
 // import { useEffect, useState } from "react";
 // import { ColoredMessage } from "./components/ColoredMessage";
 import { CssModules } from "./components/CssModules";
-import { Emotion } from "./components/Emorion";
-import { StyledComponents } from "./components/StyledComponents";
-import { StyledJsx } from "./components/StyledJsx";
+// import { Emotion } from "./components/Emorion";
+// import { StyledComponents } from "./components/StyledComponents";
+// import { StyledJsx } from "./components/StyledJsx";
+import { TailwindCss } from "./components/TailwindCss";
 
 export const App = () => {
   // // useStateの定義
@@ -33,9 +34,7 @@ export const App = () => {
       <button onClick={onClickButton}>ボタン</button>
       <p>{num}</p> */}
       <CssModules />
-      <StyledJsx />
-      <StyledComponents />
-      <Emotion />
+      <TailwindCss />
     </>
   );
 };
