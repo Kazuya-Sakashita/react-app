@@ -1,10 +1,12 @@
+import React, { memo } from "react";
+
 const style = {
   height: "50px",
   backgroundColor: "lightgray", // 修正: backGroundColor -> backgroundColor
   padding: "8px",
 };
 
-export const Child2 = () => {
+export const Child2 = memo(() => {
   console.log("Child2レンダリング");
 
   return (
@@ -12,4 +14,4 @@ export const Child2 = () => {
       <p>Child2</p>
     </div>
   );
-};
+});
